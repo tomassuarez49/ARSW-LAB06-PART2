@@ -18,7 +18,7 @@ La funcionalidad acordada es:
 
 ###Entorno de trabajo
 
-1. Copie los fuentes base (index.html, model.js, controller.js, styles.css) en la ruta  src/main/resources/static dentro del proyecto.
+1. Copie los [fuentes base](fuentes.zip) (index.html, model.js, controller.js, styles.css) en la ruta  src/main/resources/static dentro del proyecto.
 2. En esta misma ruta, ejecute un servidor HTTP (esto es sólo para facilitar el desarrollo y depuración:
 
 	```bash
@@ -66,7 +66,7 @@ La funcionalidad acordada es:
 
 ### Parte 2.
 
-1. Modifique la función agregarPlatoOrdenActual para que funcione con el API del servidor. Para esto, haga que al agregarse un plato a una orden dicha orden sea actualizada en el servidor, y una vez hecho esto, consulte (en el API) y muestre el nuevo precio de la misma.
+1. Modifique la función agregarPlatoOrdenActual para que funcione con el API del servidor. Para esto, haga que al agregarse un plato a una orden dicha orden sea actualizada en el servidor, y una vez hecho esto, consulte (en el API) y muestre el nuevo precio de la misma. Para esto es importante revisar ejemplos de [cómo hacer peticiones PUT con jQuery](https://gist.github.com/emptyhammond/1603144), y [ejemplos del uso de promesas JavaScript](http://codepen.io/hcadavid/pen/jrwdgK).
 2. Modifique la función actualizarOrdenesDisponibles para que consulte las órdenes del API, en lugar de mostrar los datos de prueba.
 3. En su API de SpringBoot, agregue el recurso '/platos' (use un conjunto estático de platos).
 3. Modifique la función actualizarPlatosDisponibles para que se al momento de usarse utilice los datos del API en lugar de los datos de prueba.
