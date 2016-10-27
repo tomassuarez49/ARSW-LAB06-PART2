@@ -83,3 +83,9 @@ La funcionalidad acordada es:
 2. Modifique la función actualizarOrdenesDisponibles para que consulte las órdenes del API, en lugar de mostrar los datos de prueba.
 3. En su API de SpringBoot, agregue el recurso '/platos' (use un conjunto estático de platos).
 3. Modifique la función actualizarPlatosDisponibles para que se al momento de usarse utilice los datos del API en lugar de los datos de prueba.
+
+
+### Criterios de evaluación
+
+1. El cliente Web consulta correctamente del API las ordenes y los platos disponibles.
+2. Al arrastrar el plato a la orden, ésta es actualiza en el servidor, y el valor es actualizado (consultándolo al servidor).
