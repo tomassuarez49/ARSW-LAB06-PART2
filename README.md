@@ -46,7 +46,7 @@
 	1. Hacer POST al recurso /blueprints, para crear el nuevo plano.
 	2. Hacer GET a este mismo recurso, para actualizar el listado de planos y el puntaje del usuario.
 
-5. Agregue el botón 'DELETE', de manera que:
+5. Agregue el botón 'DELETE', de manera que (también con promesas):
 	* Borre el canvas.
 	* Haga DELETE del recurso correspondiente.
 	* Haga GET de los planos ahora disponibles.
