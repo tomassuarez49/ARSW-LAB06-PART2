@@ -16,6 +16,17 @@
 	1. Se agregue el punto al final de la secuencia de puntos del canvas actual (sólo en la memoria de la aplicación, AÚN NO EN EL API!).
 	2. Se repinte el dibujo.
 
+![image](https://github.com/user-attachments/assets/4bbdd1ce-4935-41e0-a55e-2e15404aa7cc)
+
+antes:
+
+![image](https://github.com/user-attachments/assets/f09d7274-ab58-4e89-9269-fbd38ff6005b)
+
+Despues:
+
+![image](https://github.com/user-attachments/assets/1c363db1-5923-4e79-88c7-fe1092def981)
+
+
 3. Agregue el botón Save/Update. Respetando la arquitectura de módulos actual del cliente, haga que al oprimirse el botón:
 	1. Se haga PUT al API, con el plano actualizado, en su recurso REST correspondiente.
 	2. Se haga GET al recurso /blueprints, para obtener de nuevo todos los planos realizados.
