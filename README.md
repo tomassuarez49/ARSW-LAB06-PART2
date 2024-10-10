@@ -24,7 +24,7 @@ antes:
 
 Despues:
 
-![image](https://github.com/user-attachments/assets/1c363db1-5923-4e79-88c7-fe1092def981)
+![image](https://github.com/user-attachments/assets/ef412024-e61f-48cc-aa0c-926a24560e59)
 
 
 3. Agregue el botón Save/Update. Respetando la arquitectura de módulos actual del cliente, haga que al oprimirse el botón:
