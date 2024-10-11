@@ -91,6 +91,15 @@ Agregamos puntos y guardamos para ver que se actualice correctamente:
 	* Haga DELETE del recurso correspondiente.
 	* Haga GET de los planos ahora disponibles.
 
+Antes:
+
+![image](https://github.com/user-attachments/assets/450bfa2b-ca8a-43a4-b4ad-ee900b00a8e8)
+
+Despues:
+
+![image](https://github.com/user-attachments/assets/47ae3ed8-fe29-439b-8922-80f56bbb70a4)
+
+
 ### Criterios de evaluación
 
 1. Funcional
