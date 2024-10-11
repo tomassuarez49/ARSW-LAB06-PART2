@@ -1,4 +1,8 @@
 #### Escuela Colombiana de Ingeniería
+
+
+## Autores: Camilo Nicolas Murcia Espinosa y Tomas Suarez Piratova
+
 #### Procesos de desarrollo de software - PDSW
 #### Construción de un cliente 'grueso' con un API REST, HTML5, Javascript y CSS3. Parte II.
 
