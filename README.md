@@ -69,6 +69,22 @@ Despues:
 
 	1. Hacer POST al recurso /blueprints, para crear el nuevo plano.
 	2. Hacer GET a este mismo recurso, para actualizar el listado de planos y el puntaje del usuario.
+Antes:
+
+![image](https://github.com/user-attachments/assets/ddb4b24e-9cc1-4c82-af50-c48106167f6d)
+
+Creamos el planoNuevo para el autor Camilo
+
+![image](https://github.com/user-attachments/assets/882e99ff-6512-42f1-892b-cb742ff1aec1)
+
+Verificamos que se actualice:
+
+![image](https://github.com/user-attachments/assets/0552ff49-9ccd-4258-bd71-7b8c9ccb72b0)
+
+Agregamos puntos y guardamos para ver que se actualice correctamente:
+
+![image](https://github.com/user-attachments/assets/3aa7c0ff-907f-4926-a21d-35e935fa422b)
+
 
 5. Agregue el botón 'DELETE', de manera que (también con promesas):
 	* Borre el canvas.
