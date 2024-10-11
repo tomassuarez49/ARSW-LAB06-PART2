@@ -118,6 +118,18 @@ public class BlueprintsServices {
     existingBlueprint.setPoints(blue.getPoints());
 }
 
+    public void deleteBlueprint(String author, String bpname) throws BlueprintNotFoundException {
+    // Verificar si el Blueprint existe
+    Blueprint blueprint = bpp.getBlueprint(author, bpname);
+    if (blueprint == null) {
+        throw new BlueprintNotFoundException("No se encontró el Blueprint para el autor " + author + " y el nombre " + bpname);
+    }
+
+    // Llamar al método de persistencia para eliminar el Blueprint
+    bpp.deleteBlueprint(author, bpname);
+}
+
+
 
         
 }

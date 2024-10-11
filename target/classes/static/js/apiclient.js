@@ -33,12 +33,41 @@ var apiclient = (function () {
             console.error("Error fetching data: ", textStatus, errorThrown);
         });
     };
+
+    var updateBlueprint = function(authorName, bpName, blueprintData) {
+        return $.ajax({
+            url: `http://localhost:8080/blueprints/${authorName}/${bpName}`,
+            type: 'PUT',
+            data: JSON.stringify(blueprintData),
+            contentType: "application/json"
+        });
+    };
+
+    var createBlueprint = function(blueprintData) {
+        return $.ajax({
+            url: `http://localhost:8080/blueprints/create`,
+            type: 'POST',
+            data: JSON.stringify(blueprintData),
+            contentType: "application/json"
+        });
+    };
+
+    var deleteBlueprint = function(authorName, bpName) {
+        return $.ajax({
+            url: `http://localhost:8080/blueprints/${authorName}/${bpName}`,
+            type: 'DELETE',
+            contentType: "application/json"
+        });
+    };
     
     
     
     return {
         getBlueprintsByAuthor: getBlueprintsByAuthor,
-        getBlueprintsByNameAndAuthor: getBlueprintsByNameAndAuthor
+        getBlueprintsByNameAndAuthor: getBlueprintsByNameAndAuthor,
+        updateBlueprint: updateBlueprint,
+        createBlueprint: createBlueprint,
+        deleteBlueprint: deleteBlueprint
     };
 
 })();

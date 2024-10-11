@@ -102,6 +102,17 @@ public ResponseEntity<?> actualizarBlueprint(@PathVariable("author") String auth
     }
 }
 
+ @RequestMapping(value = "/{author}/{bpname}", method = RequestMethod.DELETE)
+public ResponseEntity<?> deleteBlueprint(@PathVariable("author") String author, @PathVariable("bpname") String bpname) {
+    try {
+        bs.deleteBlueprint(author, bpname);
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);  // Retorna 204 si fue exitoso
+    } catch (Exception ex) {
+        return new ResponseEntity<>("Error al eliminar el Blueprint", HttpStatus.INTERNAL_SERVER_ERROR);
+    }
+}
+
+
 
 
 

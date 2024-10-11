@@ -9,12 +9,18 @@
     <script src="js/apimock.js"></script>
     <script src="js/apiclient.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/canvasModule.js"></script>
+    <script>
+        $(document).ready(function() {
+            canvasModule.initialize("canvas"); 
+        });
+    </script>
     
     <link rel="stylesheet" href="/webjars/bootstrap/5.3.2/css/bootstrap.min.css" />
 </head>
 <body>
 <main class="container mt-5">
-    <h1 class="text-center mb-5">Blueprints</h1>
+    <h1 class="text-center mb-5" >Blueprints</h1>
     <div class="row">
         <div class="col-md-4">
             <h2 class="mb-3">Author</h2>
@@ -42,9 +48,38 @@
             </div>
         </div>
         <div class="col-md-8">
-            <h2 id="name-blueprint" class="mb-3"></h2>
-            <canvas id="canvas" width="420" height="420" class="border"></canvas>
-        </div>
+            <div class="container">
+                <!-- Fila 1: Título -->
+                <div class="row mb-3">
+                    <div class="col-12">
+                        <h2 id="name-blueprint" class="mb-3">Current Blueprint</h2>
+                    </div>
+                </div>
+            
+                <!-- Fila 2: Canvas -->
+                <div class="row mb-3">
+                    <div class="col-12">
+                        <button class="btn btn-primary" id="create-canvas">Create new BluePrint</button>
+                    </div>
+                </div>
+            
+                <!-- Fila 3: Botón "Create new Blueprint" -->
+                <div class="row mb-3">
+                    <div class="col-12">
+                        <canvas id="canvas" width="420" height="420" class="border"></canvas>
+                    </div>
+                </div>
+            
+                <!-- Fila 4: Botón "Save/Update" -->
+                <div class="row mb-3">
+                    <div class="col-12">
+                        <button class="btn btn-primary" id="save-canvas">Save/Update</button>
+                        <button class="btn btn-primary" id="delete">Delete</button>
+
+                    </div>
+                </div>
+            </div>
+            
     </div>
 </main>
 </body>

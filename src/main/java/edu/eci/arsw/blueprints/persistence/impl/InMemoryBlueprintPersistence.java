@@ -103,4 +103,13 @@ public class InMemoryBlueprintPersistence implements BlueprintsPersistence {
         return resultBlueprints;
     }
 
+   @Override
+    public void deleteBlueprint(String author, String bprintname) throws BlueprintNotFoundException {
+        Tuple tuple = new Tuple<>(author,bprintname);
+        if( !blueprints.containsKey(tuple) ){
+            throw new BlueprintNotFoundException("No se encontro ningun plano");
+        }
+        blueprints.remove( tuple );
+    }
+
 }
