@@ -52,6 +52,15 @@ Despues:
 	```
 	* Como en este caso se tienen tres operaciones basadas en _callbacks_, y que las mismas requieren realizarse en un orden específico, tenga en cuenta cómo usar las promesas de JavaScript [mediante alguno de los ejemplos disponibles](http://codepen.io/hcadavid/pen/jrwdgK).
 
+Antes:
+
+![image](https://github.com/user-attachments/assets/828c8626-4ec0-4d86-9c64-a4d2b94ef213)
+
+Despues:
+
+![image](https://github.com/user-attachments/assets/b7b398e3-7d98-4e45-83a4-42afefffcaa9)
+
+
 4. Agregue el botón 'Create new blueprint', de manera que cuando se oprima: 
 	* Se borre el canvas actual.
 	* Se solicite el nombre del nuevo 'blueprint' (usted decide la manera de hacerlo).
